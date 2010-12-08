@@ -14,6 +14,7 @@
 			);
 			dependencies = (
 				26FB080C12AEE56300E48A9A /* PBXTargetDependency */,
+				260244A812B03367007CE3D1 /* PBXTargetDependency */,
 			);
 			name = All;
 			productName = All;
@@ -22,10 +23,19 @@
 
 /* Begin PBXBuildFile section */
 		2602447112AFFE30007CE3D1 /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2602447012AFFE30007CE3D1 /* AbstractFactory.m */; };
+		260244A312B03318007CE3D1 /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 260244A212B03318007CE3D1 /* Builder.m */; };
+		260244A412B03331007CE3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		26FB07DE12AEE33F00E48A9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		260244A712B03367007CE3D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2602449C12B032F7007CE3D1 /* Builder */;
+			remoteInfo = Builder;
+		};
 		26FB080B12AEE56300E48A9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -38,11 +48,21 @@
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2602447012AFFE30007CE3D1 /* AbstractFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractFactory.m; path = Source/AbstractFactory.m; sourceTree = "<group>"; };
+		2602449D12B032F7007CE3D1 /* Builder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Builder; sourceTree = BUILT_PRODUCTS_DIR; };
+		260244A212B03318007CE3D1 /* Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Builder.m; path = Source/Builder.m; sourceTree = "<group>"; };
 		26FB07D512AEE18300E48A9A /* AbstractFactory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AbstractFactory; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FB07DD12AEE33F00E48A9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2602449B12B032F7007CE3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260244A412B03331007CE3D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26FB07D312AEE18300E48A9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2602447012AFFE30007CE3D1 /* AbstractFactory.m */,
+				260244A212B03318007CE3D1 /* Builder.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -86,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				26FB07D512AEE18300E48A9A /* AbstractFactory */,
+				2602449D12B032F7007CE3D1 /* Builder */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +122,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2602449C12B032F7007CE3D1 /* Builder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260244A112B03315007CE3D1 /* Build configuration list for PBXNativeTarget "Builder" */;
+			buildPhases = (
+				2602449A12B032F7007CE3D1 /* Sources */,
+				2602449B12B032F7007CE3D1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Builder;
+			productName = Builder;
+			productReference = 2602449D12B032F7007CE3D1 /* Builder */;
+			productType = "com.apple.product-type.tool";
+		};
 		26FB07D412AEE18300E48A9A /* AbstractFactory */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26FB07D912AEE1A100E48A9A /* Build configuration list for PBXNativeTarget "AbstractFactory" */;
@@ -130,11 +168,20 @@
 			targets = (
 				26FB07D412AEE18300E48A9A /* AbstractFactory */,
 				26FB080812AEE55C00E48A9A /* All */,
+				2602449C12B032F7007CE3D1 /* Builder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2602449A12B032F7007CE3D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260244A312B03318007CE3D1 /* Builder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26FB07D212AEE18300E48A9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +193,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		260244A812B03367007CE3D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2602449C12B032F7007CE3D1 /* Builder */;
+			targetProxy = 260244A712B03367007CE3D1 /* PBXContainerItemProxy */;
+		};
 		26FB080C12AEE56300E48A9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 26FB07D412AEE18300E48A9A /* AbstractFactory */;
@@ -177,6 +229,52 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		2602449F12B032F7007CE3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Builder;
+			};
+			name = Debug;
+		};
+		260244A012B032F7007CE3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Builder;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -259,6 +357,15 @@
 			buildConfigurations = (
 				1DEB927908733DD40010E9CD /* Debug */,
 				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260244A112B03315007CE3D1 /* Build configuration list for PBXNativeTarget "Builder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2602449F12B032F7007CE3D1 /* Debug */,
+				260244A012B032F7007CE3D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
