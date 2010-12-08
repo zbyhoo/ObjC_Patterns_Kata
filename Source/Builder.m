@@ -49,9 +49,9 @@
 @interface CommedyBuilder : StoryBuilder
 @end
 @implementation CommedyBuilder
-- (void) setIntroduction { [self.story appendString:@"com int\n"]; }
-- (void) setPlot         { [self.story appendString:@"com plot\n"]; }
-- (void) setEnding       { [self.story appendString:@"com end\n"]; }
+- (void) setIntroduction { [self.story appendString:@"Two friends talking.\n"]; }
+- (void) setPlot         { [self.story appendString:@"How many people works in your company?\n"]; }
+- (void) setEnding       { [self.story appendString:@"No more than a half :)\n"]; }
 @end
 
 #pragma mark -
@@ -62,9 +62,9 @@
 @interface HorrorBuilder : StoryBuilder
 @end
 @implementation HorrorBuilder
-- (void) setIntroduction { [self.story appendString:@"horror int\n"]; }
-- (void) setPlot         { [self.story appendString:@"horror plot\n"]; }
-- (void) setEnding       { [self.story appendString:@"horror end\n"]; }
+- (void) setIntroduction { [self.story appendString:@"Girl is wandering in the forest.\n"]; }
+- (void) setPlot         { [self.story appendString:@"Someone starts chasing her!\n"]; }
+- (void) setEnding       { [self.story appendString:@"And ... he kills that girl :(\n"]; }
 @end
 
 #pragma mark -
