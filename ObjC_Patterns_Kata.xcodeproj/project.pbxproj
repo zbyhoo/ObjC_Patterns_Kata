@@ -15,6 +15,7 @@
 			dependencies = (
 				26FB080C12AEE56300E48A9A /* PBXTargetDependency */,
 				260244A812B03367007CE3D1 /* PBXTargetDependency */,
+				26A94CD012B18BA000D124EB /* PBXTargetDependency */,
 			);
 			name = All;
 			productName = All;
@@ -25,6 +26,8 @@
 		2602447112AFFE30007CE3D1 /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2602447012AFFE30007CE3D1 /* AbstractFactory.m */; };
 		260244A312B03318007CE3D1 /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 260244A212B03318007CE3D1 /* Builder.m */; };
 		260244A412B03331007CE3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
+		26A94CCE12B18B9300D124EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
+		26A94CD212B18BBF00D124EB /* FactoryMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A94CD112B18BBF00D124EB /* FactoryMethod.m */; };
 		26FB07DE12AEE33F00E48A9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2602449C12B032F7007CE3D1;
 			remoteInfo = Builder;
+		};
+		26A94CCF12B18BA000D124EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26A94CC912B18B8900D124EB /* FactoryMethod */;
+			remoteInfo = FactoryMethod;
 		};
 		26FB080B12AEE56300E48A9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -50,6 +60,8 @@
 		2602447012AFFE30007CE3D1 /* AbstractFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractFactory.m; path = Source/AbstractFactory.m; sourceTree = "<group>"; };
 		2602449D12B032F7007CE3D1 /* Builder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Builder; sourceTree = BUILT_PRODUCTS_DIR; };
 		260244A212B03318007CE3D1 /* Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Builder.m; path = Source/Builder.m; sourceTree = "<group>"; };
+		26A94CCA12B18B8900D124EB /* FactoryMethod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryMethod; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A94CD112B18BBF00D124EB /* FactoryMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactoryMethod.m; path = Source/FactoryMethod.m; sourceTree = "<group>"; };
 		26FB07D512AEE18300E48A9A /* AbstractFactory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AbstractFactory; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FB07DD12AEE33F00E48A9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -60,6 +72,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				260244A412B03331007CE3D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A94CC812B18B8900D124EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A94CCE12B18B9300D124EB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +111,7 @@
 			children = (
 				2602447012AFFE30007CE3D1 /* AbstractFactory.m */,
 				260244A212B03318007CE3D1 /* Builder.m */,
+				26A94CD112B18BBF00D124EB /* FactoryMethod.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -108,6 +129,7 @@
 			children = (
 				26FB07D512AEE18300E48A9A /* AbstractFactory */,
 				2602449D12B032F7007CE3D1 /* Builder */,
+				26A94CCA12B18B8900D124EB /* FactoryMethod */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +158,22 @@
 			name = Builder;
 			productName = Builder;
 			productReference = 2602449D12B032F7007CE3D1 /* Builder */;
+			productType = "com.apple.product-type.tool";
+		};
+		26A94CC912B18B8900D124EB /* FactoryMethod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A94CD312B18BBF00D124EB /* Build configuration list for PBXNativeTarget "FactoryMethod" */;
+			buildPhases = (
+				26A94CC712B18B8900D124EB /* Sources */,
+				26A94CC812B18B8900D124EB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FactoryMethod;
+			productName = FactoryMethod;
+			productReference = 26A94CCA12B18B8900D124EB /* FactoryMethod */;
 			productType = "com.apple.product-type.tool";
 		};
 		26FB07D412AEE18300E48A9A /* AbstractFactory */ = {
@@ -169,6 +207,7 @@
 				26FB07D412AEE18300E48A9A /* AbstractFactory */,
 				26FB080812AEE55C00E48A9A /* All */,
 				2602449C12B032F7007CE3D1 /* Builder */,
+				26A94CC912B18B8900D124EB /* FactoryMethod */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				260244A312B03318007CE3D1 /* Builder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A94CC712B18B8900D124EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A94CD212B18BBF00D124EB /* FactoryMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +244,11 @@
 			isa = PBXTargetDependency;
 			target = 2602449C12B032F7007CE3D1 /* Builder */;
 			targetProxy = 260244A712B03367007CE3D1 /* PBXContainerItemProxy */;
+		};
+		26A94CD012B18BA000D124EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26A94CC912B18B8900D124EB /* FactoryMethod */;
+			targetProxy = 26A94CCF12B18BA000D124EB /* PBXContainerItemProxy */;
 		};
 		26FB080C12AEE56300E48A9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -274,6 +326,52 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Builder;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		26A94CCC12B18B8A00D124EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FactoryMethod;
+			};
+			name = Debug;
+		};
+		26A94CCD12B18B8A00D124EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FactoryMethod;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -366,6 +464,15 @@
 			buildConfigurations = (
 				2602449F12B032F7007CE3D1 /* Debug */,
 				260244A012B032F7007CE3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26A94CD312B18BBF00D124EB /* Build configuration list for PBXNativeTarget "FactoryMethod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26A94CCC12B18B8A00D124EB /* Debug */,
+				26A94CCD12B18B8A00D124EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
