@@ -22,9 +22,12 @@ static God* god = nil;
 @synthesize name;
 + (God*) getInstance
 {
-    if (god == nil)
+    @synchronized(self)
     {
-        god = [[super allocWithZone:NULL] init];
+        if (god == nil)
+        {
+            god = [[super allocWithZone:NULL] init];
+        }
     }
     return god;
 }
