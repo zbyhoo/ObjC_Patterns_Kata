@@ -34,7 +34,7 @@
 		2626AE0412BA9AF30008A579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		2626AE0912BA9B170008A579 /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2626AE0812BA9B170008A579 /* Bridge.m */; };
 		2626AE7412BAB6040008A579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
-		2626AE7912BAB6320008A579 /* Composite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2626AE7812BAB6320008A579 /* Composite.m */; };
+		2626AF0412BACCC30008A579 /* Composite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2626AF0312BACCC30008A579 /* Composite.m */; };
 		2653F69B12B6A45600C00F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		2653F69D12B6A47100C00F62 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F69C12B6A47100C00F62 /* Singleton.m */; };
 		2653F6DA12B6B49400C00F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
@@ -113,7 +113,7 @@
 		2626AE0012BA9AE30008A579 /* Bridge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bridge; sourceTree = BUILT_PRODUCTS_DIR; };
 		2626AE0812BA9B170008A579 /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bridge.m; path = Source/Bridge.m; sourceTree = "<group>"; };
 		2626AE7012BAB5F90008A579 /* Composite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Composite; sourceTree = BUILT_PRODUCTS_DIR; };
-		2626AE7812BAB6320008A579 /* Composite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Composite.m; sourceTree = "<group>"; };
+		2626AF0312BACCC30008A579 /* Composite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Composite.m; path = Source/Composite.m; sourceTree = "<group>"; };
 		2653F69712B6A44000C00F62 /* Singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Singleton; sourceTree = BUILT_PRODUCTS_DIR; };
 		2653F69C12B6A47100C00F62 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Singleton.m; path = Source/Singleton.m; sourceTree = "<group>"; };
 		2653F6D612B6B48A00C00F62 /* Adapter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adapter; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,7 +216,7 @@
 				2653F69C12B6A47100C00F62 /* Singleton.m */,
 				2653F6DC12B6B4C100C00F62 /* Adapter.m */,
 				2626AE0812BA9B170008A579 /* Bridge.m */,
-				2626AE7812BAB6320008A579 /* Composite.m */,
+				2626AF0312BACCC30008A579 /* Composite.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2626AE7912BAB6320008A579 /* Composite.m in Sources */,
+				2626AF0412BACCC30008A579 /* Composite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
