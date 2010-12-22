@@ -21,6 +21,7 @@
 				2653F6E812B6B50600C00F62 /* PBXTargetDependency */,
 				2626AE0612BA9B020008A579 /* PBXTargetDependency */,
 				2626AE7612BAB60F0008A579 /* PBXTargetDependency */,
+				2642C9C112BFA21C003025F9 /* PBXTargetDependency */,
 			);
 			name = All;
 			productName = All;
@@ -35,6 +36,8 @@
 		2626AE0912BA9B170008A579 /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2626AE0812BA9B170008A579 /* Bridge.m */; };
 		2626AE7412BAB6040008A579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		2626AF0412BACCC30008A579 /* Composite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2626AF0312BACCC30008A579 /* Composite.m */; };
+		2642C9BF12BFA20B003025F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
+		2642C9C312BFA230003025F9 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2642C9C212BFA230003025F9 /* Decorator.m */; };
 		2653F69B12B6A45600C00F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		2653F69D12B6A47100C00F62 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F69C12B6A47100C00F62 /* Singleton.m */; };
 		2653F6DA12B6B49400C00F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
@@ -58,15 +61,22 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2626ADFF12BA9AE30008A579 /* Bridge */;
+			remoteGlobalIDString = 2626ADFF12BA9AE30008A579;
 			remoteInfo = Bridge;
 		};
 		2626AE7512BAB60F0008A579 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2626AE6F12BAB5F90008A579 /* Composite */;
+			remoteGlobalIDString = 2626AE6F12BAB5F90008A579;
 			remoteInfo = Composite;
+		};
+		2642C9C012BFA21C003025F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2642C9BA12BFA1FD003025F9;
+			remoteInfo = Decorator;
 		};
 		2653F69F12B6A4AA00C00F62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -114,6 +124,8 @@
 		2626AE0812BA9B170008A579 /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bridge.m; path = Source/Bridge.m; sourceTree = "<group>"; };
 		2626AE7012BAB5F90008A579 /* Composite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Composite; sourceTree = BUILT_PRODUCTS_DIR; };
 		2626AF0312BACCC30008A579 /* Composite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Composite.m; path = Source/Composite.m; sourceTree = "<group>"; };
+		2642C9BB12BFA1FD003025F9 /* Decorator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Decorator; sourceTree = BUILT_PRODUCTS_DIR; };
+		2642C9C212BFA230003025F9 /* Decorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Decorator.m; path = Source/Decorator.m; sourceTree = "<group>"; };
 		2653F69712B6A44000C00F62 /* Singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Singleton; sourceTree = BUILT_PRODUCTS_DIR; };
 		2653F69C12B6A47100C00F62 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Singleton.m; path = Source/Singleton.m; sourceTree = "<group>"; };
 		2653F6D612B6B48A00C00F62 /* Adapter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adapter; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +160,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2626AE7412BAB6040008A579 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2642C9B912BFA1FD003025F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2642C9BF12BFA20B003025F9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +237,7 @@
 				2653F6DC12B6B4C100C00F62 /* Adapter.m */,
 				2626AE0812BA9B170008A579 /* Bridge.m */,
 				2626AF0312BACCC30008A579 /* Composite.m */,
+				2642C9C212BFA230003025F9 /* Decorator.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -240,6 +261,7 @@
 				2653F6D612B6B48A00C00F62 /* Adapter */,
 				2626AE0012BA9AE30008A579 /* Bridge */,
 				2626AE7012BAB5F90008A579 /* Composite */,
+				2642C9BB12BFA1FD003025F9 /* Decorator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,6 +322,22 @@
 			name = Composite;
 			productName = Composite;
 			productReference = 2626AE7012BAB5F90008A579 /* Composite */;
+			productType = "com.apple.product-type.tool";
+		};
+		2642C9BA12BFA1FD003025F9 /* Decorator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2642C9C412BFA230003025F9 /* Build configuration list for PBXNativeTarget "Decorator" */;
+			buildPhases = (
+				2642C9B812BFA1FD003025F9 /* Sources */,
+				2642C9B912BFA1FD003025F9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Decorator;
+			productName = Decorator;
+			productReference = 2642C9BB12BFA1FD003025F9 /* Decorator */;
 			productType = "com.apple.product-type.tool";
 		};
 		2653F69612B6A44000C00F62 /* Singleton */ = {
@@ -403,6 +441,7 @@
 				2653F6D512B6B48A00C00F62 /* Adapter */,
 				2626ADFF12BA9AE30008A579 /* Bridge */,
 				2626AE6F12BAB5F90008A579 /* Composite */,
+				2642C9BA12BFA1FD003025F9 /* Decorator */,
 			);
 		};
 /* End PBXProject section */
@@ -429,6 +468,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2626AF0412BACCC30008A579 /* Composite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2642C9B812BFA1FD003025F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2642C9C312BFA230003025F9 /* Decorator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +536,11 @@
 			isa = PBXTargetDependency;
 			target = 2626AE6F12BAB5F90008A579 /* Composite */;
 			targetProxy = 2626AE7512BAB60F0008A579 /* PBXContainerItemProxy */;
+		};
+		2642C9C112BFA21C003025F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2642C9BA12BFA1FD003025F9 /* Decorator */;
+			targetProxy = 2642C9C012BFA21C003025F9 /* PBXContainerItemProxy */;
 		};
 		2653F6A012B6A4AA00C00F62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -682,6 +734,54 @@
 				PREBINDING = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_NAME = Composite;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2642C9BD12BFA1FE003025F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = Decorator;
+			};
+			name = Debug;
+		};
+		2642C9BE12BFA1FE003025F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = Decorator;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -980,6 +1080,15 @@
 			buildConfigurations = (
 				2626AE7212BAB5F90008A579 /* Debug */,
 				2626AE7312BAB5F90008A579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2642C9C412BFA230003025F9 /* Build configuration list for PBXNativeTarget "Decorator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2642C9BD12BFA1FE003025F9 /* Debug */,
+				2642C9BE12BFA1FE003025F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
