@@ -29,6 +29,11 @@ Running
 -------
 After compilation will finish successfully, in your build directory you will see executables in the number of currently implemented design patterns. Name of the executable corresponds to the name of the design pattern (you wouldn't know, do you? ;).
 
+UML Diagrams
+------------
+
+Again, I'm not the UML master, but maybe you will find UML diagrams (or something that tries to imitate them) of implemented patterns useful for getting to know what is going on in the code. These UML diagrams were created with help of [yuml.me](http://yuml.me) web page. 
+
 Author
 ------
 Copyright (c) 2010 [Zbigniew Kominek](http://zbyhoo.eu)
