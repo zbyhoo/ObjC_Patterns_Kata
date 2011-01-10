@@ -23,6 +23,7 @@
 				2626AE7612BAB60F0008A579 /* PBXTargetDependency */,
 				2642C9C112BFA21C003025F9 /* PBXTargetDependency */,
 				2667927212C28B680083C608 /* PBXTargetDependency */,
+				265E9CD512DB8AEE00D9377C /* PBXTargetDependency */,
 			);
 			name = All;
 			productName = All;
@@ -43,6 +44,8 @@
 		2653F69D12B6A47100C00F62 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F69C12B6A47100C00F62 /* Singleton.m */; };
 		2653F6DA12B6B49400C00F62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		2653F6DD12B6B4C100C00F62 /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F6DC12B6B4C100C00F62 /* Adapter.m */; };
+		265E9CD312DB8AD400D9377C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
+		265E9CD812DB8B6000D9377C /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E9CD712DB8B6000D9377C /* Flyweight.m */; };
 		2667927012C28B510083C608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		2667927412C28B800083C608 /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2667927312C28B800083C608 /* Facade.m */; };
 		267CB7EB12B2DA3D00A9DFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
@@ -95,11 +98,18 @@
 			remoteGlobalIDString = 2653F6D512B6B48A00C00F62;
 			remoteInfo = Adapter;
 		};
+		265E9CD412DB8AEE00D9377C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265E9CCE12DB8ABB00D9377C /* Flyweight */;
+			remoteInfo = Flyweight;
+		};
 		2667927112C28B680083C608 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2667926B12C28B400083C608 /* Facade */;
+			remoteGlobalIDString = 2667926B12C28B400083C608;
 			remoteInfo = Facade;
 		};
 		267CB7ED12B2DA4B00A9DFA0 /* PBXContainerItemProxy */ = {
@@ -140,6 +150,8 @@
 		2653F69C12B6A47100C00F62 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Singleton.m; path = Source/Singleton.m; sourceTree = "<group>"; };
 		2653F6D612B6B48A00C00F62 /* Adapter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Adapter; sourceTree = BUILT_PRODUCTS_DIR; };
 		2653F6DC12B6B4C100C00F62 /* Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Adapter.m; path = Source/Adapter.m; sourceTree = "<group>"; };
+		265E9CCF12DB8ABB00D9377C /* Flyweight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Flyweight; sourceTree = BUILT_PRODUCTS_DIR; };
+		265E9CD712DB8B6000D9377C /* Flyweight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Flyweight.m; path = Source/Flyweight.m; sourceTree = "<group>"; };
 		2667926C12C28B400083C608 /* Facade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Facade; sourceTree = BUILT_PRODUCTS_DIR; };
 		2667927312C28B800083C608 /* Facade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Facade.m; path = Source/Facade.m; sourceTree = "<group>"; };
 		267CB7E712B2DA2A00A9DFA0 /* Prototype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prototype; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +208,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2653F6DA12B6B49400C00F62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265E9CCD12DB8ABB00D9377C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265E9CD312DB8AD400D9377C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +279,7 @@
 				2626AF0312BACCC30008A579 /* Composite.m */,
 				2642C9C212BFA230003025F9 /* Decorator.m */,
 				2667927312C28B800083C608 /* Facade.m */,
+				265E9CD712DB8B6000D9377C /* Flyweight.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -284,6 +305,7 @@
 				2626AE7012BAB5F90008A579 /* Composite */,
 				2642C9BB12BFA1FD003025F9 /* Decorator */,
 				2667926C12C28B400083C608 /* Facade */,
+				265E9CCF12DB8ABB00D9377C /* Flyweight */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -394,6 +416,22 @@
 			productReference = 2653F6D612B6B48A00C00F62 /* Adapter */;
 			productType = "com.apple.product-type.tool";
 		};
+		265E9CCE12DB8ABB00D9377C /* Flyweight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265E9CD612DB8B0D00D9377C /* Build configuration list for PBXNativeTarget "Flyweight" */;
+			buildPhases = (
+				265E9CCC12DB8ABB00D9377C /* Sources */,
+				265E9CCD12DB8ABB00D9377C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flyweight;
+			productName = Flyweight;
+			productReference = 265E9CCF12DB8ABB00D9377C /* Flyweight */;
+			productType = "com.apple.product-type.tool";
+		};
 		2667926B12C28B400083C608 /* Facade */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2667927512C28B800083C608 /* Build configuration list for PBXNativeTarget "Facade" */;
@@ -481,6 +519,7 @@
 				2626AE6F12BAB5F90008A579 /* Composite */,
 				2642C9BA12BFA1FD003025F9 /* Decorator */,
 				2667926B12C28B400083C608 /* Facade */,
+				265E9CCE12DB8ABB00D9377C /* Flyweight */,
 			);
 		};
 /* End PBXProject section */
@@ -531,6 +570,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2653F6DD12B6B4C100C00F62 /* Adapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265E9CCC12DB8ABB00D9377C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265E9CD812DB8B6000D9377C /* Flyweight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +645,11 @@
 			isa = PBXTargetDependency;
 			target = 2653F6D512B6B48A00C00F62 /* Adapter */;
 			targetProxy = 2653F6E712B6B50600C00F62 /* PBXContainerItemProxy */;
+		};
+		265E9CD512DB8AEE00D9377C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265E9CCE12DB8ABB00D9377C /* Flyweight */;
+			targetProxy = 265E9CD412DB8AEE00D9377C /* PBXContainerItemProxy */;
 		};
 		2667927212C28B680083C608 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -934,6 +986,54 @@
 			};
 			name = Release;
 		};
+		265E9CD112DB8ABB00D9377C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = Flyweight;
+			};
+			name = Debug;
+		};
+		265E9CD212DB8ABB00D9377C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRODUCT_NAME = Flyweight;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		2667926E12C28B400083C608 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1207,6 +1307,15 @@
 			buildConfigurations = (
 				2653F6D812B6B48A00C00F62 /* Debug */,
 				2653F6D912B6B48A00C00F62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265E9CD612DB8B0D00D9377C /* Build configuration list for PBXNativeTarget "Flyweight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265E9CD112DB8ABB00D9377C /* Debug */,
+				265E9CD212DB8ABB00D9377C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
