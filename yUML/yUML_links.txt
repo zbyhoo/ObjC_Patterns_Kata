@@ -37,3 +37,12 @@ http://yuml.me/diagram/scruffy/class/[Client]%3C%3E-%3E[%3C%3CComponent%3E%3E;Op
 Facade
 
 http://yuml.me/diagram/scruffy/class/[Facade]uses%20-.-%3E[Subsystem%20N],[Facade]uses%20-.-%3E[...],[Facade]uses%20-.-%3E[Subsystem%202],[Facade]uses%20-.-%3E[Subsystem%201]
+
+Flyweight
+
+http://yuml.me/diagram/scruffy;/class/[Client]->[FlyweightFactory|+GetFlyweight(key)], [FlyweightFactory|+GetFlyweight(key)]<>1->*[Flyweight|+Operation(extrinsicState)], [Flyweight|+Operation(extrinsicState)]^-[UnsharedConcreteFlyweight|+Operation(extrinsicState)|allState], [Flyweight|+Operation(extrinsicState)]^-[ConcreteFlyweight|+Operation(extrinsicState)|intrinsicState], [Client]->[UnsharedConcreteFlyweight|+Operation(extrinsicState)|allState], [Client]->[ConcreteFlyweight|+Operation(extrinsicState)|intrinsicState]
+
+Proxy
+
+http://yuml.me/diagram/scruffy;/class/[Client]->[<<Subject>>;Request()], [<<Subject>>;Request()]^-.-[RealSubject|+Request()], [<<Subject>>;Request()]^-.-[Proxy|+Request()], [Proxy|+Request()]realSubject->[RealSubject|+Request()], [Proxy|+Request()]-[note:Request() => ... realSubject->Request() ...]
+
