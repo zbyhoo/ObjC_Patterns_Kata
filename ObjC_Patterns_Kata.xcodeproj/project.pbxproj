@@ -24,6 +24,7 @@
 				2642C9C112BFA21C003025F9 /* PBXTargetDependency */,
 				2667927212C28B680083C608 /* PBXTargetDependency */,
 				265E9CD512DB8AEE00D9377C /* PBXTargetDependency */,
+				26019AF512DE2A5A001D7908 /* PBXTargetDependency */,
 			);
 			name = All;
 			productName = All;
@@ -31,6 +32,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		26019AF312DE2A48001D7908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
+		26019AF712DE2A75001D7908 /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26019AF612DE2A75001D7908 /* Proxy.m */; };
 		2602447112AFFE30007CE3D1 /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2602447012AFFE30007CE3D1 /* AbstractFactory.m */; };
 		260244A312B03318007CE3D1 /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 260244A212B03318007CE3D1 /* Builder.m */; };
 		260244A412B03331007CE3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
@@ -56,6 +59,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		26019AF412DE2A5A001D7908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26019AEE12DE2A38001D7908 /* Proxy */;
+			remoteInfo = Proxy;
+		};
 		260244A712B03367007CE3D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -102,7 +112,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 265E9CCE12DB8ABB00D9377C /* Flyweight */;
+			remoteGlobalIDString = 265E9CCE12DB8ABB00D9377C;
 			remoteInfo = Flyweight;
 		};
 		2667927112C28B680083C608 /* PBXContainerItemProxy */ = {
@@ -137,6 +147,8 @@
 
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		26019AEF12DE2A38001D7908 /* Proxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Proxy; sourceTree = BUILT_PRODUCTS_DIR; };
+		26019AF612DE2A75001D7908 /* Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Proxy.m; path = Source/Proxy.m; sourceTree = "<group>"; };
 		2602447012AFFE30007CE3D1 /* AbstractFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractFactory.m; path = Source/AbstractFactory.m; sourceTree = "<group>"; };
 		2602449D12B032F7007CE3D1 /* Builder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Builder; sourceTree = BUILT_PRODUCTS_DIR; };
 		260244A212B03318007CE3D1 /* Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Builder.m; path = Source/Builder.m; sourceTree = "<group>"; };
@@ -163,6 +175,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26019AED12DE2A38001D7908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26019AF312DE2A48001D7908 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2602449B12B032F7007CE3D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +300,7 @@
 				2642C9C212BFA230003025F9 /* Decorator.m */,
 				2667927312C28B800083C608 /* Facade.m */,
 				265E9CD712DB8B6000D9377C /* Flyweight.m */,
+				26019AF612DE2A75001D7908 /* Proxy.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -306,6 +327,7 @@
 				2642C9BB12BFA1FD003025F9 /* Decorator */,
 				2667926C12C28B400083C608 /* Facade */,
 				265E9CCF12DB8ABB00D9377C /* Flyweight */,
+				26019AEF12DE2A38001D7908 /* Proxy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +342,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		26019AEE12DE2A38001D7908 /* Proxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26019AF812DE2A75001D7908 /* Build configuration list for PBXNativeTarget "Proxy" */;
+			buildPhases = (
+				26019AEC12DE2A38001D7908 /* Sources */,
+				26019AED12DE2A38001D7908 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Proxy;
+			productName = Proxy;
+			productReference = 26019AEF12DE2A38001D7908 /* Proxy */;
+			productType = "com.apple.product-type.tool";
+		};
 		2602449C12B032F7007CE3D1 /* Builder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 260244A112B03315007CE3D1 /* Build configuration list for PBXNativeTarget "Builder" */;
@@ -520,11 +558,20 @@
 				2642C9BA12BFA1FD003025F9 /* Decorator */,
 				2667926B12C28B400083C608 /* Facade */,
 				265E9CCE12DB8ABB00D9377C /* Flyweight */,
+				26019AEE12DE2A38001D7908 /* Proxy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		26019AEC12DE2A38001D7908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26019AF712DE2A75001D7908 /* Proxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2602449A12B032F7007CE3D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,6 +663,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		26019AF512DE2A5A001D7908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26019AEE12DE2A38001D7908 /* Proxy */;
+			targetProxy = 26019AF412DE2A5A001D7908 /* PBXContainerItemProxy */;
+		};
 		260244A812B03367007CE3D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2602449C12B032F7007CE3D1 /* Builder */;
@@ -697,6 +749,52 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		26019AF112DE2A39001D7908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Proxy;
+			};
+			name = Debug;
+		};
+		26019AF212DE2A39001D7908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Proxy;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1253,6 +1351,15 @@
 			buildConfigurations = (
 				1DEB927908733DD40010E9CD /* Debug */,
 				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26019AF812DE2A75001D7908 /* Build configuration list for PBXNativeTarget "Proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26019AF112DE2A39001D7908 /* Debug */,
+				26019AF212DE2A39001D7908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
