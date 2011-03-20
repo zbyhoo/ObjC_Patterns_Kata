@@ -29,7 +29,7 @@
 {
     NSEnumerator* e = [students objectEnumerator];
     id object;
-    while (object = [e nextObject])
+    while ((object = [e nextObject]))
     {
         if ([object conformsToProtocol:@protocol(PartyMakeable)])
         {
@@ -73,26 +73,11 @@
 
 /*! \brief Adapter
  */
-@interface RookieStudentAdapter : NSObject <PartyMakeable>
-{
-    RookieStudent* rookieStudent;
-}
+@interface RookieStudent (MakeMeRealStudent) <PartyMakeable>
+- (void) makeParty;
 @end
-@implementation RookieStudentAdapter
-- (id) init
-{
-    if ([super init] != nil)
-    {
-        rookieStudent = [[RookieStudent alloc] init];
-    }
-    return self;
-}
-- (void) makeParty { [rookieStudent littleDance]; }
-- (void) dealloc
-{
-    [rookieStudent release];
-    [super dealloc];
-}
+@implementation RookieStudent (MakeMeRealStudent)
+- (void) makeParty { [self littleDance]; }
 @end
 
 #pragma mark -
@@ -102,7 +87,7 @@ int main (int argc, const char * argv[])
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     
     Student* student = [[Student alloc] init];
-    RookieStudentAdapter* rookieStudent = [[RookieStudentAdapter alloc] init];
+    RookieStudent* rookieStudent = [[RookieStudent alloc] init];
                         
     Dormitory* dormitory = [[Dormitory alloc] init];
     NSArray* students = [[NSArray alloc] initWithObjects: student, rookieStudent, nil];
