@@ -13,6 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				2679247E133687CF0093115B /* PBXTargetDependency */,
 				26FB080C12AEE56300E48A9A /* PBXTargetDependency */,
 				260244A812B03367007CE3D1 /* PBXTargetDependency */,
 				26A94CD012B18BA000D124EB /* PBXTargetDependency */,
@@ -51,6 +52,8 @@
 		265E9CD812DB8B6000D9377C /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = 265E9CD712DB8B6000D9377C /* Flyweight.m */; };
 		2667927012C28B510083C608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		2667927412C28B800083C608 /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2667927312C28B800083C608 /* Facade.m */; };
+		267924701336871A0093115B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2679246F1336871A0093115B /* Foundation.framework */; };
+		2679247C133687700093115B /* ChainOfResponsibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2679247B133687700093115B /* ChainOfResponsibility.m */; };
 		267CB7EB12B2DA3D00A9DFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
 		267CB7F012B2DA6600A9DFA0 /* Prototype.m in Sources */ = {isa = PBXBuildFile; fileRef = 267CB7EF12B2DA6600A9DFA0 /* Prototype.m */; };
 		26A94CCE12B18B9300D124EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FB07DD12AEE33F00E48A9A /* Foundation.framework */; };
@@ -122,6 +125,13 @@
 			remoteGlobalIDString = 2667926B12C28B400083C608;
 			remoteInfo = Facade;
 		};
+		2679247D133687CF0093115B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2679246B1336871A0093115B;
+			remoteInfo = ChainOfResponsibility;
+		};
 		267CB7ED12B2DA4B00A9DFA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -145,6 +155,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2679246A1336871A0093115B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		26019AEF12DE2A38001D7908 /* Proxy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Proxy; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +188,9 @@
 		265E9CD712DB8B6000D9377C /* Flyweight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Flyweight.m; path = Source/Flyweight.m; sourceTree = "<group>"; };
 		2667926C12C28B400083C608 /* Facade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Facade; sourceTree = BUILT_PRODUCTS_DIR; };
 		2667927312C28B800083C608 /* Facade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Facade.m; path = Source/Facade.m; sourceTree = "<group>"; };
+		2679246C1336871A0093115B /* ChainOfResponsibility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChainOfResponsibility; sourceTree = BUILT_PRODUCTS_DIR; };
+		2679246F1336871A0093115B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2679247B133687700093115B /* ChainOfResponsibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChainOfResponsibility.m; path = Source/ChainOfResponsibility.m; sourceTree = "<group>"; };
 		267CB7E712B2DA2A00A9DFA0 /* Prototype */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prototype; sourceTree = BUILT_PRODUCTS_DIR; };
 		267CB7EF12B2DA6600A9DFA0 /* Prototype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Prototype.m; path = Source/Prototype.m; sourceTree = "<group>"; };
 		26A94CCA12B18B8900D124EB /* FactoryMethod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryMethod; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +272,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		267924691336871A0093115B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267924701336871A0093115B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		267CB7E512B2DA2A00A9DFA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +313,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859EA2029092E104C91782 /* Documentation */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				2679246E1336871A0093115B /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				26FB07DD12AEE33F00E48A9A /* Foundation.framework */,
 			);
@@ -301,6 +335,7 @@
 				2667927312C28B800083C608 /* Facade.m */,
 				265E9CD712DB8B6000D9377C /* Flyweight.m */,
 				26019AF612DE2A75001D7908 /* Proxy.m */,
+				2679247B133687700093115B /* ChainOfResponsibility.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -328,8 +363,17 @@
 				2667926C12C28B400083C608 /* Facade */,
 				265E9CCF12DB8ABB00D9377C /* Flyweight */,
 				26019AEF12DE2A38001D7908 /* Proxy */,
+				2679246C1336871A0093115B /* ChainOfResponsibility */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2679246E1336871A0093115B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2679246F1336871A0093115B /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C6859EA2029092E104C91782 /* Documentation */ = {
@@ -486,6 +530,23 @@
 			productReference = 2667926C12C28B400083C608 /* Facade */;
 			productType = "com.apple.product-type.tool";
 		};
+		2679246B1336871A0093115B /* ChainOfResponsibility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267924791336871A0093115B /* Build configuration list for PBXNativeTarget "ChainOfResponsibility" */;
+			buildPhases = (
+				267924681336871A0093115B /* Sources */,
+				267924691336871A0093115B /* Frameworks */,
+				2679246A1336871A0093115B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChainOfResponsibility;
+			productName = ChainOfResponsibility;
+			productReference = 2679246C1336871A0093115B /* ChainOfResponsibility */;
+			productType = "com.apple.product-type.tool";
+		};
 		267CB7E612B2DA2A00A9DFA0 /* Prototype */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 267CB7F112B2DA6600A9DFA0 /* Build configuration list for PBXNativeTarget "Prototype" */;
@@ -541,7 +602,11 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "ObjC_Patterns_Kata" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* ObjC_Patterns_Kata */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -559,6 +624,7 @@
 				2667926B12C28B400083C608 /* Facade */,
 				265E9CCE12DB8ABB00D9377C /* Flyweight */,
 				26019AEE12DE2A38001D7908 /* Proxy */,
+				2679246B1336871A0093115B /* ChainOfResponsibility */,
 			);
 		};
 /* End PBXProject section */
@@ -636,6 +702,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		267924681336871A0093115B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2679247C133687700093115B /* ChainOfResponsibility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		267CB7E412B2DA2A00A9DFA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -707,6 +781,11 @@
 			isa = PBXTargetDependency;
 			target = 2667926B12C28B400083C608 /* Facade */;
 			targetProxy = 2667927112C28B680083C608 /* PBXContainerItemProxy */;
+		};
+		2679247E133687CF0093115B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2679246B1336871A0093115B /* ChainOfResponsibility */;
+			targetProxy = 2679247D133687CF0093115B /* PBXContainerItemProxy */;
 		};
 		267CB7EE12B2DA4B00A9DFA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1180,6 +1259,42 @@
 			};
 			name = Release;
 		};
+		267924771336871A0093115B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		267924781336871A0093115B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		267CB7E912B2DA2A00A9DFA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1435,6 +1550,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		267924791336871A0093115B /* Build configuration list for PBXNativeTarget "ChainOfResponsibility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267924771336871A0093115B /* Debug */,
+				267924781336871A0093115B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		267CB7F112B2DA6600A9DFA0 /* Build configuration list for PBXNativeTarget "Prototype" */ = {
 			isa = XCConfigurationList;
